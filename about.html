@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>About Us</title>
+	<link rel="stylesheet" type="text/css" href="about.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<meta charset="utf-8">
+</head>
+<body>
+	<header class="v-header container">
+		<div class="fullscreen-video-wrap">
+			<video src="background loop.mov" autoplay="true" loop="">
+			</video>
+		</div>
+		<div class="header-overlay"></div>
+		<div class="header-content text-md-center">
+			<h1><span>     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ABOUT THIS WEBSITE</span></h1>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We provide all the essential tips and remedicies for health care </p>
+			<a class="btn" href="index.html">&nbsp;&nbsp;Go to HOME</a>
+			<div class="img">
+				<a href="#bottom" id="top"><img src="down.png"></a>
+			</div>
+		</div>
+	</header>
+
+	<section class="section section-b">
+		<div class="container" id="bottom">
+			<h2>© 2018, Web Design Forum, All Rights Reserved</h2>
+			<p>Rahil Kothari&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;   Saawan Kanjiya&nbsp;&nbsp;&nbsp;   |&nbsp;&nbsp;&nbsp;   Priyank Sheth   &nbsp;&nbsp;&nbsp;</p>
+		</div>
+	</section>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+
+  $("a").on('click', function(event) {
+
+    if (this.hash !== "") {
+ 
+      event.preventDefault();
+
+      var hash = this.hash;
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 1000, function(){
+
+        window.location.hash = hash;
+      });
+    } 
+  });
+});
+</script>
+</body>
+</html>
